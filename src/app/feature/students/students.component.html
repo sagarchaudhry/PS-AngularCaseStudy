@@ -1,0 +1,20 @@
+<div>
+    <table class="table-student">
+        <thead class="header-table">
+            <tr>
+                <th *ngFor="let item of studentHeader" scope="col">{{item | titlecase}} &nbsp;&nbsp;<i
+                        class="fa fa-sort" (click)="sortTable(item)"></i></th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of studentItems">
+            <tr>
+                <td>{{item.name}}</td>
+                <td>{{item.class}}</td>
+                <td>{{item.section}}</td>
+                <td>{{item.sub1}}</td>
+                <td>{{item.sub2}}</td>
+                <td>{{item.sub3}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

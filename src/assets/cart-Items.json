@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Apple",
+    "imgUrl": "./assets/vendor/images/apple.jpg",
+    "price": 100,
+    "textInfo": "An Apple a day keeps doctor away"
+  },
+  {
+    "title": "Orange",
+    "imgUrl": "./assets/vendor/images/orange.jpg",
+    "price": 1232,
+    "textInfo": "An Orange a day keeps doctor away"
+  },
+  {
+    "title": "Kiwi",
+    "imgUrl": "./assets/vendor/images/kiwi.jpg",
+    "price": 1322,
+    "textInfo": "An Kiwi a day keeps doctor away.........."
+  },
+  {
+    "title": "Water Melon",
+    "imgUrl": "./assets/vendor/images/water-melon.jpg",
+    "price": 1132,
+    "textInfo": "An Water Melon a day keeps doctor away"
+  },
+  {
+    "title": "Mango",
+    "imgUrl": "./assets/vendor/images/mango.jpg",
+    "price": 13542,
+    "textInfo": "An Water Melon a day keeps doctor away"
+  },
+  {
+    "title": "Coco-nut",
+    "imgUrl": "./assets/vendor/images/coco-nut.jpg",
+    "price": 1235,
+    "textInfo": "An Coco Nut a day keeps doctor away"
+  },
+  {
+    "title": "Head Phone",
+    "imgUrl": "./assets/vendor/images/headphone.jpg",
+    "price": 12345,
+    "textInfo": "An headphone a day keeps headache away"
+  },
+  {
+    "title": "Pen",
+    "imgUrl": "./assets/vendor/images/pen.jpg",
+    "price": 12345,
+    "textInfo": "An pen a day keeps everything away"
+  },
+  {
+    "title": "Laptop",
+    "imgUrl": "./assets/vendor/images/laptop.jpg",
+    "price": 1232,
+    "textInfo": "An laptop a day keeps workload away"
+  },
+  {
+    "title": "Camera",
+    "imgUrl": "./assets/vendor/images/camera.jpg",
+    "price": 123235,
+    "textInfo": "An camera a day keeps photos away"
+  },
+  {
+    "title": "Apple",
+    "imgUrl": "./assets/vendor/images/apple.jpg",
+    "price": 100,
+    "textInfo": "An Apple a day keeps doctor away"
+  },
+  {
+    "title": "Orange",
+    "imgUrl": "./assets/vendor/images/orange.jpg",
+    "price": 1232,
+    "textInfo": "An Orange a day keeps doctor away"
+  },
+  {
+    "title": "Kiwi",
+    "imgUrl": "./assets/vendor/images/kiwi.jpg",
+    "price": 1322,
+    "textInfo": "An Kiwi a day keeps doctor away.........."
+  },
+  {
+    "title": "Water Melon",
+    "imgUrl": "./assets/vendor/images/water-melon.jpg",
+    "price": 1132,
+    "textInfo": "An Water Melon a day keeps doctor away"
+  },
+  {
+    "title": "Mango",
+    "imgUrl": "./assets/vendor/images/mango.jpg",
+    "price": 13542,
+    "textInfo": "An Water Melon a day keeps doctor away"
+  },
+  {
+    "title": "Coco-nut",
+    "imgUrl": "./assets/vendor/images/coco-nut.jpg",
+    "price": 1235,
+    "textInfo": "An Coco Nut a day keeps doctor away"
+  },
+  {
+    "title": "Head Phone",
+    "imgUrl": "./assets/vendor/images/headphone.jpg",
+    "price": 12345,
+    "textInfo": "An headphone a day keeps headache away"
+  },
+  {
+    "title": "Pen",
+    "imgUrl": "./assets/vendor/images/pen.jpg",
+    "price": 12345,
+    "textInfo": "An pen a day keeps everything away"
+  },
+  {
+    "title": "Laptop",
+    "imgUrl": "./assets/vendor/images/laptop.jpg",
+    "price": 1232,
+    "textInfo": "An laptop a day keeps workload away"
+  },
+  {
+    "title": "Camera",
+    "imgUrl": "./assets/vendor/images/camera.jpg",
+    "price": 123235,
+    "textInfo": "An camera a day keeps photos away"
+  },
+  {
+    "title": "Apple",
+    "imgUrl": "./assets/vendor/images/apple.jpg",
+    "price": 100,
+    "textInfo": "An Apple a day keeps doctor away"
+  },
+  {
+    "title": "Orange",
+    "imgUrl": "./assets/vendor/images/orange.jpg",
+    "price": 1232,
+    "textInfo": "An Orange a day keeps doctor away"
+  },
+  {
+    "title": "Kiwi",
+    "imgUrl": "./assets/vendor/images/kiwi.jpg",
+    "price": 1322,
+    "textInfo": "An Kiwi a day keeps doctor away.........."
+  },
+  {
+    "title": "Water Melon",
+    "imgUrl": "./assets/vendor/images/water-melon.jpg",
+    "price": 1132,
+    "textInfo": "An Water Melon a day keeps doctor away"
+  },
+  {
+    "title": "Mango",
+    "imgUrl": "./assets/vendor/images/mango.jpg",
+    "price": 13542,
+    "textInfo": "An Water Melon a day keeps doctor away"
+  },
+  {
+    "title": "Coco-nut",
+    "imgUrl": "./assets/vendor/images/coco-nut.jpg",
+    "price": 1235,
+    "textInfo": "An Coco Nut a day keeps doctor away"
+  },
+  {
+    "title": "Head Phone",
+    "imgUrl": "./assets/vendor/images/headphone.jpg",
+    "price": 12345,
+    "textInfo": "An headphone a day keeps headache away"
+  },
+  {
+    "title": "Pen",
+    "imgUrl": "./assets/vendor/images/pen.jpg",
+    "price": 12345,
+    "textInfo": "An pen a day keeps everything away"
+  },
+  {
+    "title": "Laptop",
+    "imgUrl": "./assets/vendor/images/laptop.jpg",
+    "price": 1232,
+    "textInfo": "An laptop a day keeps workload away"
+  },
+  {
+    "title": "Camera",
+    "imgUrl": "./assets/vendor/images/camera.jpg",
+    "price": 123235,
+    "textInfo": "An camera a day keeps photos away"
+  },
+  {
+    "title": "Apple",
+    "imgUrl": "./assets/vendor/images/apple.jpg",
+    "price": 100,
+    "textInfo": "An Apple a day keeps doctor away"
+  },
+  {
+    "title": "Orange",
+    "imgUrl": "./assets/vendor/images/orange.jpg",
+    "price": 1232,
+    "textInfo": "An Orange a day keeps doctor away"
+  },
+  {
+    "title": "Kiwi",
+    "imgUrl": "./assets/vendor/images/kiwi.jpg",
+    "price": 1322,
+    "textInfo": "An Kiwi a day keeps doctor away.........."
+  },
+  {
+    "title": "Water Melon",
+    "imgUrl": "./assets/vendor/images/water-melon.jpg",
+    "price": 1132,
+    "textInfo": "An Water Melon a day keeps doctor away"
+  },
+  {
+    "title": "Mango",
+    "imgUrl": "./assets/vendor/images/mango.jpg",
+    "price": 13542,
+    "textInfo": "An Water Melon a day keeps doctor away"
+  },
+  {
+    "title": "Coco-nut",
+    "imgUrl": "./assets/vendor/images/coco-nut.jpg",
+    "price": 1235,
+    "textInfo": "An Coco Nut a day keeps doctor away"
+  },
+  {
+    "title": "Head Phone",
+    "imgUrl": "./assets/vendor/images/headphone.jpg",
+    "price": 12345,
+    "textInfo": "An headphone a day keeps headache away"
+  },
+  {
+    "title": "Pen",
+    "imgUrl": "./assets/vendor/images/pen.jpg",
+    "price": 12345,
+    "textInfo": "An pen a day keeps everything away"
+  },
+  {
+    "title": "Laptop",
+    "imgUrl": "./assets/vendor/images/laptop.jpg",
+    "price": 1232,
+    "textInfo": "An laptop a day keeps workload away"
+  },
+  {
+    "title": "Camera",
+    "imgUrl": "./assets/vendor/images/camera.jpg",
+    "price": 123235,
+    "textInfo": "An camera a day keeps photos away"
+  }
+]

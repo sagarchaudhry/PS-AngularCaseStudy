@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-lg-7 col-md-7 col-sm-6"></div>
+    <div class="col-lg-2 col-md-2 col-sm-2">
+        <i class="fa fa-th-large fa-2x" [class.addBorder]="view ==='grid'" (click)="sortBy('grid')"></i>
+        <i class="fa fa-th-list fa-2x" [class.addBorder]="view ==='list'" (click)="sortBy('list')"></i>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-3">
+        <select class="dropdown" (change)="sortingBy($event)">
+            <option selected value='select'>Sort By Price</option>
+            <option *ngFor="let item of priceFilter" value="{{item.value}}">{{item.name}}</option>
+        </select>
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+</div>
+<div class="row">
+    <div class="p-3 mb-3" [ngClass]="{'col-lg-3': view === 'grid','col-lg-6': view !=='grid'}"
+        *ngFor="let detail of filteredList">
+        <div [ngClass]="{'card' : view === 'grid','list-group':view !=='grid'}" style="height: 100%;">
+            <img [ngClass]="{'card-img-top' : view === 'grid','listImageView' : view !== 'grid' }" [src]="detail.imgUrl"
+                alt="Card image cap" loading="lazy">
+            <h5 class="pl-5" [ngClass]="{'card-title':view === 'grid','imageTitle' : view !== 'grid' }">
+                {{detail.title}}</h5>
+            <p class="pl-5 fg-1 card-text"
+                [ngClass]="{'card-text' : view === 'grid','listDescription' : view !== 'grid' }">
+                {{detail.textInfo}}</p>
+            <h5 class="pl-5" [ngClass]="{'card-title':view === 'grid','imageTitle' : view !== 'grid' }">
+                {{detail.price | currency}}
+            </h5>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+a{
+    text-decoration: none;
+    color: black;
+}
+a:active{
+    color: cornflowerblue;
+}
+.navbar-light .navbar-brand{
+    color: rgb(153 81 81);
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand.active{
+    color: rgb(0,0,0,.9);
+}
+.contain{
+    display: flex;
+    justify-content: center;
+}
+main{
+    margin-top: 20px;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}

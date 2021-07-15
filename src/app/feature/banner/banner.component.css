@@ -1,0 +1,15 @@
+.outer-div{
+    border: 2px solid black;
+    position: absolute;
+    left: 20%;
+    margin-top: 15px;
+}
+.outer-div div{
+    margin: 20px;
+    border: 2px solid black; 
+    position: relative;
+}
+.inner-div{
+    border: 2px solid black; 
+    position: absolute;
+}

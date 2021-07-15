@@ -1,0 +1,5 @@
+<cdk-virtual-scroll-viewport itemSize="50" class="viewport">
+    <div class="wh-200" *cdkVirtualFor="let data of dataCount;let index = index;">
+        <button type="button" class="btn text-center" (click)="btnClick(index+1)">Click</button>
+    </div>
+</cdk-virtual-scroll-viewport>

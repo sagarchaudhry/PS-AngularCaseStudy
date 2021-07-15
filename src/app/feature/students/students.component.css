@@ -1,0 +1,18 @@
+.table-student{
+    width: 100%;
+    border: 1px solid black;
+}
+.header-table{
+    background: lightgrey;
+}
+
+i{
+    cursor: pointer;
+}
+table,
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }

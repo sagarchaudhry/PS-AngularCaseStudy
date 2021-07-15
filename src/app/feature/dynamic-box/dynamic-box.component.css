@@ -1,0 +1,24 @@
+.wh-200{
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 10px;
+    margin-left: 10px;
+}
+.btn{
+    /* border-radius: 25px; */
+    border: 1px solid black;
+}
+.viewport {
+  height: calc(100vh - 100px);
+  width: 100%;
+  border: 1px solid black;
+  overflow-x: hidden;
+}
+
+.example-item {
+  height: 50px;
+}

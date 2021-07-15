@@ -1,0 +1,7 @@
+.btn-submit{
+    margin: 10px;
+    float: left;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 25px;
+}

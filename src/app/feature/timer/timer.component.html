@@ -1,0 +1,17 @@
+<div class="row timer_container justify-content-around">
+    <div class="col-lg-5 count-width">
+        <app-countdowntimer [currentTime]="timerLimitValue"></app-countdowntimer>
+    </div>
+    <div class="col-lg-6 count-width">
+        <app-timerlimit (timerLimit)="getTimerLimitValue($event)" (pauseTimerStatus)="getPausedCount($event)"
+            (resetCompleteTimer)="getResetTimer($event)" [pausedTimeCollection]="pausedTimeCollection">
+        </app-timerlimit>
+    </div>
+    <div class="col-lg-5 count-width mt-5">
+        <app-timestamps [timeStamps]="timeStampsArray"></app-timestamps>
+
+    </div>
+    <div class="col-lg-6 count-width mt-5">
+        <app-clickcount [startCount]="startCount" [pauseCount]="pauseCount"></app-clickcount>
+    </div>
+</div>

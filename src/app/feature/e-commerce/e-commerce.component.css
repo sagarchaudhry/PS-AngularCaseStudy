@@ -1,0 +1,43 @@
+.dropdown{
+padding: 8px;
+font-size: 14px;
+width: 100%;
+margin-top: 5px;
+}
+i{
+    cursor: pointer;
+}
+.pl-5.fg-1{
+    padding-left: 5px;
+    flex-grow: 1;
+}
+.pl-5{
+   padding-left: 5px; 
+}
+
+.addBorder{
+    margin : .5rem;
+    border :solid 2px;
+}
+.formatIconDiv{
+display: inline-block;
+margin: .1rem;
+/* background-color: $color-yellow-green; */
+background-color: yellowgreen;
+border-radius: 1.1rem;
+}
+
+img{
+    width:243px;
+    height: 180px;
+}
+.listImageView{
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.backgroundGray{
+    background-color: lightgray;
+}
