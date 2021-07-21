@@ -6,12 +6,12 @@ enum filterScale {
     WithoutSorting = "SELECT"
 }
 
-export function sortList(value: string, list: any[]) {
+export function sortList(value: string, list: any[], column: string) {
     if (value === filterScale.LTH) {
-        return list.sort((a: any, b: any) => { return a.price - b.price })
+        return list.sort((a: any, b: any) => { return a[column] - b[column] })
     }
     else if (value === filterScale.HTL) {
-        return list.sort((a: any, b: any) => { return b.price - a.price })
+        return list.sort((a: any, b: any) => { return b[column] - a[column] })
     } else {
         return list;
     }

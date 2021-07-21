@@ -5,7 +5,8 @@
     background: transparent;
     border-radius: 25px;
 }
-.btn-active:focus{
-    border: 1px solid blue;
-    color: blue;
+.btn-submit.active{
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
 }

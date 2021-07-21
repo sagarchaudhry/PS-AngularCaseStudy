@@ -9,8 +9,10 @@
 <div class="row">
     <div class="col-lg-5"></div>
     <div class="col-lg-6">
-        <button type="button" class="btn-submit" (click)="startTimer(timerLimitInput)">Start</button>
-        <button type="button" class="btn-submit" (click)="pauseTimer()">Pause</button>
+        <button type="button" class="btn-submit" [ngClass]="{'active': startButton}"
+            (click)="startTimer(timerLimitInput)">Start</button>
+        <button type="button" class="btn-submit" [ngClass]="{'active': pauseButton}"
+            (click)="pauseTimer()">Pause</button>
         <button type="button" class="btn-submit" (click)="resetTimer()">Reset</button>
     </div>
 </div>

@@ -11,6 +11,9 @@ export class TimerlimitComponent implements OnInit, OnDestroy {
   timerLimitInput = null;
   pausedTimeCollection: any = [];
   pausedTimeSubscriber: any;
+  startButton: boolean = false;
+  pauseButton: boolean = false;
+
   constructor(private serviceTimerService: ServiceTimerService) {
 
   }
@@ -30,13 +33,23 @@ export class TimerlimitComponent implements OnInit, OnDestroy {
 
   startTimer(limit: any) {
     this.serviceTimerService.getTimerLimitValue(limit);
+    if (limit != null) {
+      this.startButton = true;
+      this.pauseButton = false;
+    }
   }
   pauseTimer() {
     this.serviceTimerService.getPausedCount(true);
+    if (this.timerLimitInput != null && this.startButton === true) {
+      this.startButton = false;
+      this.pauseButton = true;
+    }
   }
   resetTimer() {
     this.timerLimitInput = null;
     this.serviceTimerService.getResetTimer(true);
+    this.startButton = false;
+    this.pauseButton = false;
   }
 
   ngOnDestroy() {

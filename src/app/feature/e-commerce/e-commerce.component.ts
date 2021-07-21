@@ -41,7 +41,7 @@ export class ECommerceComponent implements OnInit {
       this.filteredList = this.itemsDetails;
     }
     else {
-      this.filteredList = sortList(event.target.value, this.filteredList);
+      this.filteredList = sortList(event.target.value, this.filteredList, 'price');
     }
 
   }
