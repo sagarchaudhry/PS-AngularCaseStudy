@@ -2,8 +2,9 @@
     <table class="table-student">
         <thead class="header-table">
             <tr>
-                <th *ngFor="let item of studentHeader" scope="col">{{item | titlecase}} &nbsp;&nbsp;<i
-                        class="fa fa-sort" (click)="sortTable(item)"></i></th>
+                <th *ngFor="let item of studentHeader" scope="col">{{item | titlecase}} &nbsp;&nbsp;<i [ngClass]="{'fa fa-sort-up':sortType === sortingType.ASC , 'fa fa-sort-down':sortType === sortingType.DESC,
+                        'fa fa-sort':sortType === sortingType.NONE }" (click)="sortTable(sortType,item)"
+                        style="font-family: FontAwesome;"></i></th>
             </tr>
         </thead>
         <tbody *ngFor="let item of studentItems">

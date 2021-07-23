@@ -1,19 +1,18 @@
-import { Items } from "../feature/e-commerce/items";
+import { SortType } from "./sortType.modal";
 
-enum filterScale {
-    LTH = 'LTH',
-    HTL = "HTL",
-    WithoutSorting = "SELECT"
-}
-
-export function sortList(value: string, list: any[], column: string) {
-    if (value === filterScale.LTH) {
-        return list.sort((a: any, b: any) => { return a[column] - b[column] })
-    }
-    else if (value === filterScale.HTL) {
-        return list.sort((a: any, b: any) => { return b[column] - a[column] })
-    } else {
-        return list;
+export function sortMethod(column: string, type: any) {
+    return (a: any, b: any) => {
+        if (type === SortType.ASC) {
+            if (a[column] < b[column]) {
+                return -1;
+            }
+        }
+        else if (type === SortType.DESC) {
+            if (a[column] > b[column]) {
+                return -1;
+            }
+        }
+        return 0;
     }
 }
 

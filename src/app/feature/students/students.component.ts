@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { sortList } from 'src/app/common/sort';
+import { sortMethod } from 'src/app/common/sort';
+import { SortType } from 'src/app/common/sortType.modal';
 import { students } from './students';
 import { StudentsService } from './students.service';
 
@@ -11,34 +12,43 @@ import { StudentsService } from './students.service';
 export class StudentsComponent implements OnInit {
   studentItems: students[] = [];
   studentHeader: string[] = [];
-  sortType: boolean = false;
+  sortType: any;
+  sortingType = SortType;
+  currentSortColumn!: string;
+  studentList: students[] = [];
   constructor(private studentService: StudentsService) { }
 
   ngOnInit(): void {
+    this.sortType = this.sortingType.NONE;
     this.getStudentList();
   }
   getStudentList() {
     this.studentService.getStudentList().subscribe(
       (res) => {
-        this.studentItems = res;
+        this.studentList.push(...res)
+        this.studentItems.push(...res);
         this.studentHeader = Object.keys(res[0]);
       }
     )
   }
 
-  sortTable(value: string) {
-    this.sortType = !this.sortType;
-    this.studentItems.sort(this.sortByProperty(value, this.sortType));
-  }
-  sortByProperty(value: string, sortType: boolean) {
-    return (obj1: any, obj2: any) => {
-      if ((sortType ? obj1[value] : obj2[value]) < (sortType ? obj2[value] : obj1[value])) {
-        return -1;
-      }
-      if ((sortType ? obj1[value] : obj2[value]) < (sortType ? obj2[value] : obj1[value])) {
-        return 1;
-      }
-      return 0;
+  sortTable(type: string, sortColumn: string) {
+    if (this.currentSortColumn !== sortColumn) {
+      this.sortType = this.sortingType.ASC;
+      this.currentSortColumn = sortColumn;
+    }
+    if (type === this.sortingType.NONE) {
+      this.studentItems.length = 0;
+      this.studentItems.push(...this.studentList);
+      this.sortType = this.sortingType.ASC;
+    }
+    if (type === this.sortingType.ASC) {
+      this.studentItems.sort(sortMethod(sortColumn, type))
+      this.sortType = this.sortingType.DESC;
+    }
+    if (type === this.sortingType.DESC) {
+      this.studentItems.sort(sortMethod(sortColumn, type))
+      this.sortType = this.sortingType.NONE;
     }
   }
 

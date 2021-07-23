@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { sortList } from 'src/app/common/sort';
+import { sortMethod } from 'src/app/common/sort';
+import { SortType } from 'src/app/common/sortType.modal';
 import { ECommerceService } from './e-commerce.service';
 import { Items } from './items';
 
@@ -12,15 +13,14 @@ export class ECommerceComponent implements OnInit {
 
   constructor(private ecommerceService: ECommerceService) { }
   filteredList: Items[] = [];
-  priceFilter: any = [];
+  priceFilter: any;
   view = 'grid';
   priceDropdown = "select";
   itemsDetails: Items[] = [];
 
   ngOnInit(): void {
-    this.priceFilter = [{ value: "LTH", name: "Low to High" },
-    { value: "HTL", name: "High to Low" }];
     this.getCartDetails();
+    this.priceFilter = SortType;
   }
 
   changeView(value: string) {
@@ -33,15 +33,12 @@ export class ECommerceComponent implements OnInit {
         this.filteredList.push(...data);
       });
   }
-  sortBy(arg: string) {
-    this.changeView(arg);
-  }
   sortingBy(event: any) {
-    if (event.target.value == 'select') {
+    if (event.target.value == SortType.NONE) {
       this.filteredList = this.itemsDetails;
     }
     else {
-      this.filteredList = sortList(event.target.value, this.filteredList, 'price');
+      this.filteredList.sort(sortMethod('price', event.target.value));
     }
 
   }
