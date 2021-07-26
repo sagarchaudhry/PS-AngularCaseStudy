@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Ram",
+        "class": "10th",
+        "section": "A",
+        "sub1": "Hindi",
+        "sub2": "English",
+        "sub3": "Math"
+    },
+    {
+        "name": "Shyam",
+        "class": "12th",
+        "section": "B",
+        "sub1": "Physical",
+        "sub2": "Chemistry",
+        "sub3": "Physics"
+    },
+    {
+        "name": "Harshal",
+        "class": "5th",
+        "section": "C",
+        "sub1": "Computer",
+        "sub2": "GK",
+        "sub3": "SST"
+    },
+    {
+        "name": "Harshal1",
+        "class": "5th",
+        "section": "C",
+        "sub1": "Computer",
+        "sub2": "GK",
+        "sub3": "SST"
+    }
+]
